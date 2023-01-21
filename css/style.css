@@ -1,0 +1,793 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#1c1c1c;
+    --paragraph-color:#748182;
+}
+#home{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.content-header{
+    color: #FFFFFF;
+    /* z-index: 99999999; */
+}
+.content-header h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.content-header h3{
+    font-size: 60px ;
+    font-weight: 400;
+    
+}
+.layer-header{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+}
+.icon-item{
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+.content-header h3::after{
+    content: "";
+    animation: typing 15s infinite;
+
+}
+@keyframes typing{
+    0%{
+        content: "|";
+    }
+    1%{
+        content: "L|";
+    }
+    2%{
+        content: "La|";
+    }
+    3%{
+        content: "Lar|";
+    }
+    4%{
+        content: "Larr|";
+    }
+    5%{
+        content: "Larry |";
+    }
+    6%{
+        content: "Larry D|";
+    }
+    7%{
+        content: "Larry Da|";
+    }
+
+    8%{
+        content: "Larry Dan|";
+    }
+    9%{
+        content: "Larry Dani|";
+    }
+    10%{
+        content: "Larry Danie|";
+    }
+    11%{
+        content: "Larry Daniel|";
+    }
+    12%{
+        content: "Larry Daniels|";
+    }
+    13%{
+        content: "Larry Daniel|";
+    }
+    14%{
+        content: "Larry Danie|";
+    }
+    15%{
+        content: "Larry Dani|";
+    }
+    16%{
+        content: "Larry Dan|";
+    }
+
+    17%{
+        content: "Larry Da|";
+    }
+    18%{
+        content: "Larry D|";
+    }
+    19%{
+        content: "Larry |";
+    }
+    20%{
+        content: "Larry|";
+    }
+    21%{
+        content: "Larr|";
+    }
+    22%{
+        content: "Lar|";
+    }
+    23%{
+        content: "La|";
+    }
+    24%{
+        content: "L|";
+    }
+    25%{
+        content: "|";
+    }
+    26%{
+        content: "D |";
+    }
+    27%{
+        content: "De |";
+    }
+    28%{
+        content: "Dev |";
+    }
+
+    29%{
+        content: "Deve|";
+    }
+    30%{
+        content: "Devel|";
+    }
+    31%{
+        content: "Develo|";
+    }
+    32%{
+        content: "Develop|";
+    }
+    33%{
+        content: "Develope|";
+    }
+    34%{
+        content: "Developer|";
+    }
+    35%{
+        content: "Develope |";
+    }
+    36%{
+        content: "Develop |";
+    }
+    37%{
+        content: "Develo |";
+    }
+
+    38%{
+        content: "Devel|";
+    }
+    39%{
+        content: "Deve|";
+    }
+    40%{
+        content: "Dev|";
+    }
+    41%{
+        content: "De|";
+    }
+
+    42%{
+        content: "D|";
+    }
+    43%{
+        content: "De|";
+    }
+    44%{
+        content: "Des|";
+    }
+    45%{
+        content: "Desi|";
+    }
+    46%{
+        content: " Desig|";
+    }
+    47%{
+        content: " Design|";
+    }
+    48%{
+        content: "Design|";
+    }
+    49%{
+        content: "Designe|";
+    }
+
+    50%{
+        content: "Designer|";
+    }
+    51%{
+        content: "Designe|";
+    }
+    52%{
+        content: "Design|";
+    }
+    53%{
+        content: "Desig|";
+    }
+    54%{
+        content: "Desi|";
+    }
+    55%{
+        content: "Des|";
+    }
+    56%{
+        content: "De|";
+    }
+    57%{
+        content: "D|";
+    }
+    58%{
+        content: "D|";
+    }
+
+    59%{
+        content: "|";
+    }
+    60%{
+        content: "L|";
+    }
+    61%{
+        content: "La|";
+    }
+    62%{
+        content: "Lar|";
+    }
+    63%{
+        content: "Larr|";
+    }
+    64%{
+        content: "Larry|";
+    }
+    65%{
+        content: "Larry|";
+    }
+    66%{
+        content: "Larry D|";
+    }
+    67%{
+        content: "Larry Da|";
+    }
+
+    68%{
+        content: "Larry Dan|";
+    }
+    69%{
+        content: "Larry Dani|";
+    }
+    70%{
+        content: "Larry Danie|";
+    }
+    71%{
+        content: "Larry Daniel|";
+    }
+    72%{
+        content: "Larry Daniels|";
+    }
+    73%{
+        content: "Larry Daniel|";
+    }
+    74%{
+        content: "Larry Danie|";
+    }
+    75%{
+        content: "Larry Dani|";
+    }
+    76%{
+        content: "Larry Dan|";
+    }
+    77%{
+        content: "Larry Da|";
+    }
+    78%{
+        content: "Larry D|";
+    }
+    79%{
+        content: "Larry|";
+    }
+
+    80%{
+        content: "Larr|";
+    }
+    81%{
+        content: "Lar|";
+    }
+    82%{
+        content: "La|";
+    }
+    83%{
+        content: "L|";
+    }
+    84%{
+        content: "|";
+    }
+    85%{
+        content: "D|";
+    }
+    86%{
+        content: "De|";
+    }
+    87%{
+        content: "Dev|";
+    }
+    88%{
+        content: "Deve|";
+    }
+
+    89%{
+        content: "Devel|";
+        
+    }
+    90%{
+        content: "Develo|";
+    }
+    91%{
+        content: "Develop|";
+    }
+    92%{
+        content: "Develope|";
+    }
+
+    93%{
+        content: "Developer|";
+    }
+    94%{
+        content: " Develope|";
+    }
+    95%{
+        content: " Develop|";
+    }
+    96%{
+        content: "Develo|";
+    }
+    97%{
+        content: " Devel|";
+    }
+    98%{
+        content: " Deve|";
+    }
+    99%{
+        content: " Dev|";
+    }
+    100%{
+        content: "De |";
+    }
+
+
+}
+.navbar{
+    background-color: #ffffff !important;
+
+}
+.nav-item a{
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.navbar-brand{
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+.progress-skills{
+    height: 25px;
+    width: 100%;
+    background-color: #f7f7f7;
+   border-radius: 5px;
+   box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+}
+.progress-item1{
+    width: 95%;
+    background-color:#1c1c1c;
+    height: 100%;
+    color: white;
+    border-radius: inherit;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.item-skills{
+    margin-bottom: 30px;
+}
+.progress-item2{
+    width: 85%;
+    background-color:#1c1c1c;
+    height: 100%;
+    color: white;
+    border-radius: inherit;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+}
+.progress-item3{
+    width: 90%;
+    background-color:#1c1c1c;
+    height: 100%;
+    color: white;
+    border-radius: inherit;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.item-skills h6{
+    font-size: 13px;
+    font-weight: 500;
+    
+}
+.sub-title{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   font-size: 14px;
+   font-weight: 400;
+}
+.content-about p{
+    line-height: 1.6;
+    padding-top: 1rem;
+    font-size: 15px;
+    color: #748182
+}
+.btn1{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    background-color: #1c1c1c;
+    border: 1px solid #1c1c1c;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: all 1s ;
+    margin-top: 20px;
+}
+.btn1 a {
+    color: #eee;
+    transition: all 1s ;
+
+}
+.btn2{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    background-color:;
+    border: 1px solid #1c1c1c;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: all 1s ;
+margin-top: 20px;
+}
+.btn2 a{
+    color: #1c1c1c;
+    transition: all 1s ;
+
+}
+.btn1:hover {
+    background-color: #eee;
+    color: #1c1c1c;
+}
+.btn1 a:hover{
+    color: #1c1c1c;
+}
+.btn2:hover{
+    background-color: #1c1c1c;
+}
+.btn2 a:hover{
+    color: #eee;
+}
+.about-image {
+   
+    position: relative;
+}
+
+.image-about::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    bottom: -30px;
+    background-image: url(../img/dots.png);
+    z-index: -1;
+}
+.header-services h3{
+    color: #1c1c1c;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#services{
+    background-color: #f7f7f7;
+}
+.item-services{
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    background-color: #FFFFFF;
+}
+.icon-services{
+    width: 70px;
+    height: 70px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px !important;
+    transition: all 0.8s;
+}
+.icon-services i{
+    font-size: 30px;
+    
+    
+}
+.item-services h6{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+color: var(--main-color);
+}
+.item-services p{
+line-height: 22px;
+font-size: 14px;
+font-weight: 400;
+color: var(--paragraph-color);
+}
+.icon-services:hover{
+    background-color: var(--main-color);
+    color: #f4f4f4;
+}
+.header-services h3::after{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  z-index: -1;
+}
+.header-services h3{
+    width: fit-content;
+    margin: auto;
+}
+.portfolio-head{
+    margin-bottom: 80px !important;
+}
+.nav-item{
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+.nav-link{
+    color: var(--main-color);
+  
+}
+.nav-pills .nav-link.active{
+    background-color: white;
+    color: var(--main-color);
+    border-bottom: #1c1c1c 2px solid ;
+    border-width: 3px;
+}
+.nav-pills .nav-link.active:hover{
+    color: var(--main-color);
+}
+.nav-link:hover{
+    color: #1c1c1c;
+}
+.layer-portfolio{
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    border: 6px #34343433 solid;
+    top: 100%;
+    left: 0;
+    transition: all 0.5s;
+}
+.item-portfolio:hover .layer-portfolio{
+    top: 0;
+}
+.icon1-layer{
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    color: #eee;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--main-color);
+}
+
+.icon2-layer{
+    width: 30px;
+    height: 30px;
+    background-color: var(--main-color);
+    color: #eee;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--main-color);
+}
+.content-center h6 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.cl:hover{
+    background-color: #eee;
+    color: var(--main-color);
+}
+#works{
+    background-color: #f7f7f7;
+}
+.content-work{
+    line-height: 1.6;
+    
+    font-size: 15px;
+    color: #748182;
+}
+.content-work h6{
+    font-size: 16px;
+    font-weight: 600;
+   color: var(--main-color);
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+.content-work span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px
+}
+.carousel-indicators button{
+    width: 10px !important;
+    height: 10px !important;
+  background-color: #748182 !important;
+}
+.carousel-indicators .active{
+    background-color: #748182;
+}
+.item-client p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.counter{
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--main-color);
+    font-size: 30px;
+    margin-top: 15px;
+}
+.item-client span{
+    font-size: 30px;
+   
+}
+#blog{
+    background-color: #F7F7F7;
+}
+.content-blog{
+    background-color: #fff;
+    
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+.content-blog p{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 10px;
+}
+.content-blog h4{
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.content-blog h4 a{
+    color: var(--main-color);
+}
+html{
+    scroll-behavior: smooth;
+}
+.more{
+    border-bottom: 2px solid #333;
+}
+.more a{
+    color: var(--main-color);
+}
+.item-blog:hover img{
+    transform: scale(1.1);
+    
+    
+}
+.item-blog img{
+   
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.item-blog{
+   overflow: hidden;
+    
+}
+.item-contact h6{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.item-contact p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.form-name input{
+    width: 50%;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    /* margin-top: 30px; */
+}
+.form-group textarea{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 15px;
+}
+.buton{
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 13px;
+    border: 1px solid var(--main-color);
+    background: #1c1c1c;
+    color: #eee;
+    border-radius: 5px;
+}
+footer{
+    background-color: var(--main-color);
+}
+footer p{
+    line-height: 1.6;
+   
+    font-size: 15px;
+    color: #748182;
+}
+
+.blog-btn button{
+    border-radius: 50%;
+}
+.image-test{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px !important;
+}

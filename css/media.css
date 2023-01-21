@@ -1,0 +1,27 @@
+@media screen and (max-width:768px){
+    .about-container{
+        width: 100% !important;
+    }
+    .content-about h3{
+        padding-top: 25px !important;
+    }
+    .navbar-container{
+        width: 100% !important;
+    }
+    .nav-link{
+        display: flex;
+        justify-content: center;
+    }
+    .services-container{
+        width: 100% !important;
+    }
+    .portfolio-container{
+        width: 100% !important;
+    }
+    .container-blog{
+        width: 100% !important;
+    }
+    .container-contact{
+        width: 100% !important;
+    }
+}
